@@ -18,7 +18,7 @@ def initialize_session_state():
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hello! Ask me anything about 🤗"]
+        st.session_state['generated'] = ["Hello! Ask me anything about your problem with Keboola"]
 
     if 'past' not in st.session_state:
         st.session_state['past'] = ["Hey! 👋"]
@@ -34,7 +34,7 @@ def display_chat_history(chain):
 
     with container:
         with st.form(key='my_form', clear_on_submit=True):
-            user_input = st.text_input("Question:", placeholder="Ask about your PDF", key='input')
+            user_input = st.text_input("Question:", placeholder="Ask about your problem", key='input')
             submit_button = st.form_submit_button(label='Send')
 
         if submit_button and user_input:
@@ -71,7 +71,7 @@ def create_conversational_chain(vector_store):
 def main():
     # Initialize session state
     initialize_session_state()
-    st.title("Multi-PDF ChatBot using Mistral-7B-Instruct :books:")
+    st.title("KeboolaChatBot using Mistral-7B-Instruct")
     # Initialize Streamlit
     st.sidebar.title("Document Processing")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
