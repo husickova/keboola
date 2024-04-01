@@ -6,7 +6,7 @@ from langchain.vectorstores import FAISS
 from langchain.document_loaders import TextLoader, DirectoryLoader
 import os
 
-directory_path = "/content/drive/MyDrive/Keboola"
+directory_path = "https://github.com/husickova/keboola/tree/ffc8723ac5c0a71cb64666e3e0f0630b8120bd0f/soubory"
 loader = DirectoryLoader(directory_path, glob="**/*.txt", loader_cls=TextLoader, silent_errors=True)
 data = loader.load()
 
