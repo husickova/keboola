@@ -7,3 +7,4 @@ pypdf
 accelerate
 llama-cpp-python
 streamlit
+github
