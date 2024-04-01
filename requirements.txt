@@ -1,10 +1,11 @@
 langchain
 torch
+accelerate
 sentence_transformers
+streamlit_chat
+streamlit
 faiss-cpu
+tiktoken
 huggingface-hub
 pypdf
-accelerate
 llama-cpp-python
-streamlit
-PyGithub
