@@ -4,6 +4,7 @@ from langchain.llms import LlamaCpp
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.document_loaders import TextLoader, DirectoryLoader
+from transformers import AutoModelForCausalLM
 import os
 
 directory_path = "https://github.com/husickova/keboola/tree/ffc8723ac5c0a71cb64666e3e0f0630b8120bd0f/soubory"
@@ -23,7 +24,7 @@ vector_store = FAISS.from_documents(text_chunks, embedding=embeddings)
 #Import Model
 llm = LlamaCpp(
     streaming = True,
-    model_path="/content/drive/MyDrive/model_mistral/mistral-7b-instruct-v0.2.Q5_K_S.gguf",
+    model_path = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-v0.1", device_map="auto"),
     temperature=0.75,
     top_p=1,
     verbose=True,
