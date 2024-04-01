@@ -55,7 +55,7 @@ def usage():
     """
     Prints the usage command lines
     """
-    print "usage: gh-download --token=token --org=org --repo=repo --branch=main --folder="soubory"
+    print ("usage: gh-download --token=token --org=org --repo=repo --branch=main --folder="soubory")
 
 def main(argv):
     """
