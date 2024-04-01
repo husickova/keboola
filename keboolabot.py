@@ -1,12 +1,12 @@
-!pip install langchain
-!pip install torch
-!pip install sentence_transformers
-!pip install faiss-cpu
-!pip install huggingface-hub
-!pip install pypdf
-!pip -q install accelerate
-!pip install llama-cpp-python
-!pip -q install git+https://github.com/huggingface/transformers
+pip install langchain
+pip install torch
+pip install sentence_transformers
+pip install faiss-cpu
+pip install huggingface-hub
+pip install pypdf
+pip -q install accelerate
+pip install llama-cpp-python
+pip -q install git+https://github.com/huggingface/transformers
 
 from langchain.chains import RetrievalQA
 from langchain.embeddings import HuggingFaceEmbeddings
