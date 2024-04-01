@@ -24,7 +24,7 @@ vector_store = FAISS.from_documents(text_chunks, embedding=embeddings)
 #Import Model
 llm = LlamaCpp(
     streaming = True,
-    model_path = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-v0.1", device_map="auto"),
+    model_path = "mistral-7b-instruct-v0.1.Q4_K_M.gguf",
     temperature=0.75,
     top_p=1,
     verbose=True,
