@@ -54,7 +54,7 @@ def create_conversational_chain(vector_store):
     # Create llm
     llm = LlamaCpp(
     streaming = True,
-    model_path= "/Users/katerinahusickova/Dokumenty/mistral-7b-instruct-v0.2.Q5_K_S.gguf",
+    model_path = st.file_uploader("Upload your MISTRAL model file", type=["gguf"]).name,
     temperature=0.75,
     top_p=1, 
     verbose=True,
