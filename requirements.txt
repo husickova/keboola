@@ -9,7 +9,3 @@ tiktoken
 huggingface-hub
 github
 llama-cpp-python
-sys
-getopt
-os
-base64
