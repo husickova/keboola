@@ -64,7 +64,7 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv, "t:o:r:b:f:", ["token=", "org=", "repo=", "branch=", "folder="])
     except getopt.GetoptError as err:
-        print str(err)
+        print(err)
         usage()
         sys.exit(2)
     for opt, arg in opts:
