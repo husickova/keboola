@@ -7,5 +7,9 @@ streamlit
 faiss-cpu
 tiktoken
 huggingface-hub
-PyGithub
+github
 llama-cpp-python
+sys
+getopt
+os
+base64
