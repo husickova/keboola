@@ -7,6 +7,7 @@ from langchain.document_loaders import TextLoader, DirectoryLoader
 from github import Github
 from github import GithubException
 import os
+import sys
 
 def get_sha_for_tag(repository, tag):
     """
