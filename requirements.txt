@@ -1,8 +1,8 @@
 langchain
 torch
 accelerate
-sentence_transformers
-streamlit_chat
+sentence-transformers
+streamlit-chat
 streamlit
 faiss-cpu
 tiktoken
